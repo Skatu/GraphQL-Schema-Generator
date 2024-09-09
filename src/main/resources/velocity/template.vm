@@ -1,0 +1,5 @@
+type $className {
+#foreach($field in $fields)
+    ${field.name}: ${field.type}
+#end
+}

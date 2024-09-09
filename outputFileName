@@ -1,0 +1,8 @@
+type Book {
+    id: String
+    title: String
+    author: String
+    year: int
+    price: double
+    inSale: boolean
+}
