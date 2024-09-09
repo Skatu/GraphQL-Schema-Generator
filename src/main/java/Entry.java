@@ -3,15 +3,15 @@ import org.apache.commons.lang3.StringUtils;
 import java.lang.reflect.Field;
 
 public class Entry {
-    String type;
-    String name;
+    private final String type;
+    private final String name;
 
     public static Entry create(Field field) {
         String type = translateType(field);
         return new Entry(type, field.getName());
     }
 
-    public Entry(String type, String name) {
+    private Entry(String type, String name) {
         this.type = type;
         this.name = name;
     }
