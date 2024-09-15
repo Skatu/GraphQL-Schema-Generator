@@ -1,8 +1,13 @@
+type Author {
+    name: String
+}
+
 type Book {
     id: ID
     title: String
-    author: String
+    author: Author
     year: Int
     price: Float
     inSale: Boolean
 }
+

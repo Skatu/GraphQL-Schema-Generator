@@ -3,3 +3,4 @@ type $className {
     ${field.name}: ${field.type}
 #end
 }
+
